@@ -25,3 +25,28 @@ full = first + second
 # Sort full in descending order: full_sorted
 full_sorted = sorted(full, reverse = True)
 
+
+
+# Methods 
+
+fam = ["liz", 1.73, "emma", 1.68, "mom", 1.71, "dad", 1.89]
+# Call method index() on fam to obtain that index (4)
+fam.index("mom")
+
+# Replace method
+# sister.replace("z", "sa")
+# In variable sister, letter z is replaced with letters sa
+
+# fam.append("me") adds "me" onto end of fam
+
+
+# String methods
+
+# Upper-case
+place = "poolhouse"
+place_up = place.upper() 
+print(place)
+print(place_up) 
+
+# Count number of o's in place
+print(place.count('o'))
