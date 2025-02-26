@@ -16,5 +16,10 @@ type(bmi)
 intro = "Hello! How are you?"
 
 # Boolean data type
-is_good = True 
+is_good = True
 
+print(type(is_good))
+
+# Add strings
+doubleintro = intro + intro 
+print(doubleintro)
