@@ -9,8 +9,11 @@ height = 1.79
 weight = 68.7 
 bmi = height / weight ** 2
 print(bmi)
+
+
+
+# float data type
 type(bmi)
-# float data type 
 
 # string data type 
 intro = "Hello! How are you?"
@@ -19,6 +22,8 @@ intro = "Hello! How are you?"
 is_good = True
 
 print(type(is_good))
+
+
 
 # Add strings
 doubleintro = intro + intro 

@@ -23,11 +23,15 @@ house = [["hallway", hall],
 print(areas[5])
 print(areas[-1])
 
+
+
 # Slicing - First 6 items in areas list
 downstairs = areas[:6]
 
 # Slicing - Last 4 items/items from item 7 onwards
 upstairs = areas[6:]
+
+
 
 # Subset the house list (first item in house list of 1, last item in inner list)
 house[-1][1]
@@ -35,6 +39,8 @@ house[-1][1]
 # Manipulating list
 areas[-1] = 10.50
 print(areas)
+
+
 
 # New list, additional 'room'
 areas_1 = areas + ["poolhouse", 24.5]
@@ -45,6 +51,7 @@ del areas_1[10]
 del areas_1[10]
 print(areas_1)
 
-# Create copy of list, changes made don't affect original
-areas_copy = areas[:]
 
+
+# Create copy of list, changes made don't affect original
+areas_copy = areas[:] 
