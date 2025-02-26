@@ -50,3 +50,15 @@ print(place_up)
 
 # Count number of o's in place
 print(place.count('o'))
+
+# Print index of element 20.0 from list
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+print(areas.index(20.0))
+
+# Reverse list
+areas.reverse() 
+
+
+
+# Packages
+
