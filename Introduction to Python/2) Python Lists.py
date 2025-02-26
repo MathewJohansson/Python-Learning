@@ -35,3 +35,16 @@ house[-1][1]
 # Manipulating list
 areas[-1] = 10.50
 print(areas)
+
+# New list, additional 'room'
+areas_1 = areas + ["poolhouse", 24.5]
+print(areas_1)
+
+# Delete poolhouse string and float (delete 10, float then becomes 10)
+del areas_1[10]
+del areas_1[10]
+print(areas_1)
+
+# Create copy of list, changes made don't affect original
+areas_copy = areas[:]
+
