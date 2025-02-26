@@ -62,3 +62,13 @@ areas.reverse()
 
 # Packages
 
+# apt install python3-numpy 
+
+from numpy import array
+array([1, 2, 3])
+
+# math package
+import math 
+C = 2 * 0.43 * math.pi
+#   for calculating c (circumference of given circle)
+
