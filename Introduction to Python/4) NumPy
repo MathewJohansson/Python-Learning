@@ -42,3 +42,18 @@ np_2d[:, 1:3]
 
 # Second row, all cols 
 np_2d[1, :]
+
+# Find mean of array np_city, all rows and first col
+np.mean(np_city[:, 0])
+
+# Other functions include 
+np.median(np_city[:, 0])
+np.corrcoef(np_city[:, 0], np_city[:, 0]) # check for correlation
+np-std(np_city[:, 0]) # standard deviation
+
+# Random distributions to create heights and weights
+height = np.round(np.random.normal(1.75, 0.20, 5000), 2)
+weight = np.round(np.random.normal(60.32, 15, 5000), 2)
+
+# Paste two variables together as two cols
+np_city = np.column.stack((height, weight))
