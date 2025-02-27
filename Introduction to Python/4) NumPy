@@ -1,0 +1,30 @@
+# Numeric Python
+
+import numpy as np
+
+# Note: NumPy arrays can only contain one data type
+
+baseball = [180, 215, 210, 210, 188, 176, 209, 200]
+
+# Create numpy array from baseball: np_baseball
+np_baseball = np.array(baseball)
+
+# Print type of np_baseball
+print(type(np_baseball))
+
+
+
+# Vector Arithmetic
+
+np.array([True, 1, 2]) + np.array([3, 4, False])
+# Produces:
+np.array([4, 3, 0]) + np.array([0, 2, 2]) 
+
+# Index of sub-array
+np_height_in = np.array(height_in)
+print(np_height_in[100:111])
+# Prints indexes 100-110
+
+
+
+# 3D NumPy Arrays
