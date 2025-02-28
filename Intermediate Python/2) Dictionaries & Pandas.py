@@ -81,3 +81,10 @@ brics.csv
 # brics = pd.read_csv("path/to/brics.csv")
 
 # Create a dictionary and add in pre-defined list
+names = ['United States', 'Australia', 'Japan', 'India'] 
+import pandas as pd
+my_dict = { 'country':names } 
+# can then set as dataframe: 
+cars = pd.DataFrame(my_dict) 
+print(cars)
+
