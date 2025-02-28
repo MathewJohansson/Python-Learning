@@ -39,5 +39,13 @@ plt.ylabel('POpulation')
 plt.title('World Population Projections')
 plt.yticks([0, 2, 4, 6, 8, 10],
            ['0B', '2B', '4B', '6B', '8B', '10B']) # Second list changes ylabel text for each interval
-
 plt.show()
+
+# Setting arrays as x-axis ticks
+tick_val = [1000, 10000, 100000]
+tick_lab = ['1k', '10k', '100k']
+plt.xticks(tick_val, tick_lab)
+
+# Double size of plotted points (np_pop previously stated)
+np_pop = np_pop * 2
+
