@@ -43,3 +43,41 @@ europe['italy'] = 'rome'
 
 # Update capital city (if bonn was first germany capital)
 europe['germany'] = 'berlin' # now sets berlin as capital
+
+
+
+# A dictionary of dictionaries
+europe = { 'spain': { 'capital':'madrid', 'population':46.77 },
+           'france': { 'capital':'paris', 'population':66.03 },
+           'germany': { 'capital':'berlin', 'population':80.62 },
+           'norway': { 'capital':'oslo', 'population':5.084 } }
+
+# Create sub-dictionary called data
+data = { 'capital':'rome', 'population':59.83 }
+
+# Add data to europe under key 'italy'
+europe['italy'] = data
+
+
+
+# Pandas - high-level data manipulation tool
+
+# Dictionary into df
+dict = {
+    "country":["Brazil", "Russia", "India", "China", "South Africa"],
+    "capital":["Brasilia", "Moscow", "New Delhi", "Beijing", "Pretoria"],
+    "area":[8.516, 17.10, 3.286, 9.597, 1.221],
+    "population":[200.4, 143.5, 1252, 1357, 52.98]
+}
+import pandas as pd
+brics = pd.DataFrame(dict)
+brics 
+brics.index = ["BR", "RU", "IN", "CH", "SA"]
+
+# df from CSV file
+brics.csv
+
+# Save brics as csv file
+# brics = pd.read_csv("path/to/brics.csv")
+
+# Create a dictionary and add in pre-defined list
