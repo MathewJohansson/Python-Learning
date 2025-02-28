@@ -49,3 +49,15 @@ plt.xticks(tick_val, tick_lab)
 # Double size of plotted points (np_pop previously stated)
 np_pop = np_pop * 2
 
+# Specify c (colour for each) and alpha (transparency level)
+plt.scatter(x = gdp_cap, 
+            y = life_exp, 
+            s = np.array(pop) * 2, 
+            c = col, 
+            alpha = 0.8)
+
+# Additional plot customization
+plt.text(1550, 71, 'India')
+
+# Draw basic gridlines on plot
+plt.grid(True)
