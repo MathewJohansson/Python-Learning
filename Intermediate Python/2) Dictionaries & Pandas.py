@@ -122,3 +122,6 @@ brics.iloc[[1,2,3]]
 # Rows two, three, and four, with first and second col
 brics.iloc[[1,2,3], [0,1]]
 
+# All rows, first two cols
+brics.iloc[:, [0,1]]
+
