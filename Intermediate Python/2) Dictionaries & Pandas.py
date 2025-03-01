@@ -93,21 +93,32 @@ print(cars)
 
 
 
-# Pandas 2
-
 #Square brackets:
+
 # Col access
 brics[["country", "capital"]]
+
 # Row access - only through slicing
 brics[1:4] 
 
-# loc (label-based):
+
+# loc (label-based) - use row labels instead of indexes
+
 # Row access
 brics.loc[["RU", "IN", "CH"]] 
-# Col acces
+
+# Col access
 brics.loc[:, ["country", "capital"]]
+
 # Row and col access
 brics.loc[
     ["RU", "IN", "CH"],
     ["country", "capital"]
 ]
+
+# Row access with iloc; produces second, third, and fourth rows
+brics.iloc[[1,2,3]]
+
+# Rows two, three, and four, with first and second col
+brics.iloc[[1,2,3], [0,1]]
+
