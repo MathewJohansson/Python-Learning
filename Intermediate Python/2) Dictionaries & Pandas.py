@@ -125,3 +125,11 @@ brics.iloc[[1,2,3], [0,1]]
 # All rows, first two cols
 brics.iloc[:, [0,1]]
 
+
+
+
+# A sub-DataFrame has embedded [] within []
+brics.loc[
+    ["RU", "IN", "CH"],
+    ["country", "capital"]
+]
