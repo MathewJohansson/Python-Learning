@@ -80,6 +80,9 @@ brics.csv
 # Save brics as csv file
 # brics = pd.read_csv("path/to/brics.csv")
 
+# Set first col is used as row labels (left of first col)
+# brics = pd.read_csv("path/to/brics.csv", index_col = 0)
+
 # Create a dictionary and add in pre-defined list
 names = ['United States', 'Australia', 'Japan', 'India'] 
 import pandas as pd
@@ -88,3 +91,23 @@ my_dict = { 'country':names }
 cars = pd.DataFrame(my_dict) 
 print(cars)
 
+
+
+# Pandas 2
+
+#Square brackets:
+# Col access
+brics[["country", "capital"]]
+# Row access - only through slicing
+brics[1:4] 
+
+# loc (label-based):
+# Row access
+brics.loc[["RU", "IN", "CH"]] 
+# Col acces
+brics.loc[:, ["country", "capital"]]
+# Row and col access
+brics.loc[
+    ["RU", "IN", "CH"],
+    ["country", "capital"]
+]
