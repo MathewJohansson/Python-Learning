@@ -99,3 +99,17 @@ brics[brics["area"] > 8]
 import numpy as np 
 np.logical_and(brics["area"] > 8, brics["area"] < 10)
 
+
+
+# (All below commented as cars.csv not downloaded)
+
+# cars data; cars_per_cap is cars per capita
+
+# import pandas as pd
+# cars = pd.read_csv('cars.csv', index_col = 0) 
+
+# Create car_maniac: observations  that have a cars_per_cap > 500
+# cpc = cars['cars_per_cap']
+# many_cars = cpc > 500
+# car_manic = cars[many_cars]
+
