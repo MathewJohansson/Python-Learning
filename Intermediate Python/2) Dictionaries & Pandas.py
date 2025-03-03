@@ -95,11 +95,15 @@ print(cars)
 
 #Square brackets:
 
+# Single square brackets returns a Pandas series ([])
+# Double square brackets returns a Pandas DataFrame ([[]])
+
 # Col access
 brics[["country", "capital"]]
 
-# Row access - only through slicing
+# Row access - only through slicing/slices
 brics[1:4] 
+
 
 
 # loc (label-based) - use row labels instead of indexes
@@ -115,6 +119,8 @@ brics.loc[
     ["RU", "IN", "CH"],
     ["country", "capital"]
 ]
+
+
 
 # Row access with iloc; produces second, third, and fourth rows
 brics.iloc[[1,2,3]]
