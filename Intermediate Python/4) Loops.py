@@ -1,0 +1,96 @@
+# While loop = repeated if statement
+
+z = 6
+if z % 2 == 0 : 
+    print("z is divisible by 2") 
+elif z % 3 == 0 : 
+    print("z is divisible by 3") 
+else :
+    print("z is neither divisible by 2 nor by 3") 
+
+
+
+# while condition :
+#    expression
+
+# Repeating action until condition is met
+
+error = 50.0 
+
+while error > 1 :
+    error = error / 4
+    print(error)
+
+
+
+# For loops
+
+for var in seq : 
+    expression 
+
+# "for each var in seq, exec expression"abs
+
+fam = [1.73, 1.68, 1.71, 1.89]
+
+for height in fam :
+    print(height) 
+
+# Display index in list
+for index, height in enumerate(fam) :
+    print("index " + str(index) + ": " + str(height))
+
+# Increase index by one with each iteration
+for index, area in enumerate(fam) :
+    print("room " + str(index + 1) + ": " + str(fam))
+
+
+
+# Loop over a string
+
+for c in "family" :
+    print(c.capitalize())
+
+
+
+# Another example 
+
+# house list of lists
+house = [["hallway", 11.25], 
+         ["kitchen", 18.0], 
+         ["living room", 20.0], 
+         ["bedroom", 10.75],
+         ["bathroom", 9.50]]
+         
+for x, y in house :
+    print("the " + str(x) + " is " + str(y) + " sqm")
+
+
+
+# Dictionaries 
+
+world = { "afghanistan":30.55,
+          "albania":2.77,
+          "algeria":39.21 }
+
+for key, value in world : 
+    print(key + " -- " + str(value))
+
+# To generate a key and value for each iteration
+for x, y in world.items() :
+    print(key + " -- " + str(value))
+
+
+
+# Looping through 2D NumPy arrays
+
+import numpy as np 
+np_height = np.array([1.73, 1.68, 1.71, 1.89, 1.79])
+np_weight = np.array([65.4, 59.2, 63.6, 88.4, 68.7])
+meas = np.array([np_height, np_weight])
+for val in meas : 
+    print(val)
+
+# To print each element of the array 
+for val in np.nditer(meas) :
+    print(val) 
+
