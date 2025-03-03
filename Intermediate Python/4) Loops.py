@@ -94,3 +94,13 @@ for val in meas :
 for val in np.nditer(meas) :
     print(val) 
 
+
+
+# Quick recap:
+
+# For dictionary, use key, val in my_dict.items() :
+# Dictionaries require a method
+
+# For NumPy array, use for val in np.nditer(my_array) :
+# NumPy arrays use a function 
+
