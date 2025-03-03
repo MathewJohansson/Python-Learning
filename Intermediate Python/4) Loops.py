@@ -104,3 +104,39 @@ for val in np.nditer(meas) :
 # For NumPy array, use for val in np.nditer(my_array) :
 # NumPy arrays use a function 
 
+
+
+# Looping with a Pandas DataFrame 
+
+import pandas as pd 
+brics = pd.read_csv("brics.csv", index_col = 0) 
+for lab, row in brics.iterrows() :
+    print(lab)
+    print(row) 
+
+# Print out label and capital on each iteration 
+for lab, row in brics.iterrows() : 
+    print(lab + ": " + row["capital"]) 
+
+# Adding new col with length of country names 
+for lab, row in brics.iterrows() : 
+    brics.loc[lab, "name_length"] = len(row["country"])
+print(brics)
+
+# Adding new col with names of countries in upper case 
+for lab, row in brics.iterrows() : 
+    brics.loc[lab, "COUNTRY"] = row['country'].upper()
+print(brics)
+
+# Another way of writing that 
+for lab, row in brics.iterrows() :
+    brics.loc[lab, "COUNTRY"] = str.upper(row["country"])
+
+
+
+# Calculate an entire DataFrame col by applying a function on a
+#   particular col in an element-wise fashion (a better way)
+
+brics["name_length"] = brics["country"].apply(len)
+# much more efficient! 
+
